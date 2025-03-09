@@ -87,7 +87,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 40em;
+  max-width: 400px;
   border: 2px solid green;
   background: url(./images/bg-hero-mobile.svg);
   
