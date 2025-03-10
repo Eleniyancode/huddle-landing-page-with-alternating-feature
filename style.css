@@ -90,7 +90,6 @@ body {
   max-width: 60em;
   border: 2px solid green;
   background: url(./images/bg-hero-mobile.svg);
-  
 }
 
 .hero {
@@ -186,7 +185,7 @@ footer {
   width: 95%;
   height: 10em;
   margin: auto;
-  border: 2px dotted burlywood;
+  /* border: 2px dotted burlywood; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,6 +266,112 @@ svg {
   cursor: pointer;
 }
 
+.copyright {
+  color: white;
+  text-align: center;
+}
 
 
+@media (min-width: 40em) { 
+  body {
+    width: 100%;
+    background-color: antiquewhite;
+    /* border: 4px dotted brown; */
+    /* padding: 40px; */
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1680px;
+    /* border: 2px solid black; */
+    background: hsl(193, 100%, 96%) url(./images/bg-hero-desktop.svg);
+    margin: auto;
+    
+  }
+
+  .hero div {
+    display: flex;
+    /* border: 2px dotted darkblue; */
+    margin-top: 50px;
+  }
+
+  .hero div img {
+    width: 50%;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 80px;
+    padding-right: 40px;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+  .hero-text p {
+    text-align: left;
+  }
+
+  .hero-text h1 {
+    /* font-size: 40px; */
+    /* line-height: 5lh; */
+    /* border: 2px dotted darkgoldenrod; */
+    width: 70%;
+    text-align: left;
+  }
+
+  .card-1, .card-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 10%;
+  }
+
+  .card-2 {
+    flex-direction: row;
+  }
+
+  .card-1  div,.card-2 div  {
+    text-align: left;
+    width: 60%;
+  }
+
+  .top-footer-div {
+    width: 50%;
+    padding-block: 100px;
+  }
+
+  .footer-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+  }
+
+  .footer-desktop ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .footer-social-icon {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .copyright {
+    color: white;
+    text-align: right;
+  }
+
+  footer {
+    padding-left: 150px;
+  }
+
+}
 
