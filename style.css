@@ -13,14 +13,22 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -31,14 +39,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -56,8 +71,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -72,8 +89,8 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -88,7 +105,7 @@ body {
 .wrapper {
   width: 100%;
   max-width: 60em;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background: url(./images/bg-hero-mobile.svg);
 }
 
@@ -150,8 +167,6 @@ header button {
   gap: 80px;
 }
 
-
-
 .card {
   display: flex;
   flex-direction: column;
@@ -172,7 +187,7 @@ header button {
   font-size: 1.5em;
 }
 
-.card img{
+.card img {
   width: 20em;
 }
 
@@ -218,7 +233,6 @@ footer {
   color: white;
   margin-bottom: 40px;
   font-size: 1.5em;
-
 }
 
 .footer-icon img {
@@ -271,22 +285,20 @@ svg {
   text-align: center;
 }
 
-
-@media (min-width: 40em) { 
+@media (min-width: 40em) {
   body {
     width: 100%;
     background-color: antiquewhite;
     /* border: 4px dotted brown; */
     /* padding: 40px; */
   }
-  
+
   .wrapper {
     width: 100%;
     max-width: 1680px;
     /* border: 2px solid black; */
     background: hsl(193, 100%, 96%) url(./images/bg-hero-desktop.svg);
     margin: auto;
-    
   }
 
   .hero div {
@@ -324,7 +336,8 @@ svg {
     text-align: left;
   }
 
-  .card-1, .card-2 {
+  .card-1,
+  .card-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -335,7 +348,8 @@ svg {
     flex-direction: row;
   }
 
-  .card-1  div,.card-2 div  {
+  .card-1 div,
+  .card-2 div {
     text-align: left;
     width: 60%;
   }
@@ -349,7 +363,6 @@ svg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-
   }
 
   .footer-desktop ul {
@@ -372,6 +385,4 @@ svg {
   footer {
     padding-left: 150px;
   }
-
 }
-
